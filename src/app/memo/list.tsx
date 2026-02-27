@@ -20,7 +20,7 @@ const List = (): JSX.Element => {
 
             {/* 追加ボタン */}
             <CircleButton>
-                <Icon />
+                <Icon name="plus" size={40} color="#ffffff" />
             </CircleButton>
         </View>
     )

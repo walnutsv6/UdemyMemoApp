@@ -4,6 +4,7 @@ import { Feather } from '@expo/vector-icons'
 
 import Header from '../../components/Header'
 import CircleButton from '../../components/CircleButton'
+import Icon from '../../components/icon'
 
 const Detail = (): JSX.Element => {
     return (
@@ -22,7 +23,7 @@ const Detail = (): JSX.Element => {
                 </Text>
             </ScrollView>
             <CircleButton style={{ top: 160, bottom: 'auto' }}>
-                <Feather name="check" size={40} />
+                <Icon name="pencil" size={40} color="#ffffff" />
             </CircleButton>
         </View>
     )
