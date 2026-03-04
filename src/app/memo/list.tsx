@@ -1,10 +1,16 @@
 import { View, StyleSheet } from 'react-native'
 import { JSX } from 'react'
+import { router } from 'expo-router'
 
 import Header from '../../components/Header'
 import MemoListItem from '../../components/MemoListItem'
 import CircleButton from '../../components/CircleButton'
 import Icon from '../../components/icon'
+
+const handlePress = (): void => {
+    // 新規メモ画面へ移動
+    router.push('/memo/create')
+}
 
 const List = (): JSX.Element => {
     return (
@@ -19,7 +25,7 @@ const List = (): JSX.Element => {
             </View>
 
             {/* 追加ボタン */}
-            <CircleButton>
+            <CircleButton onPress={handlePress}>
                 <Icon name="plus" size={40} color="#ffffff" />
             </CircleButton>
         </View>
