@@ -13,7 +13,8 @@ const Layout = (): JSX.Element => {
             color: '#FFFFFF',
             fontSize: 22,
             fontWeight: 'bold'
-        }
+        },
+        headerBackButtonDisplayMode: 'minimal'
     }} />
 }
 
